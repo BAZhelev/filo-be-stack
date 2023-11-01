@@ -26,6 +26,30 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+This is an example on how a FILO (First In Last Out) stack can be implemented.
+
+- Added Elements are always added at index 0
+- Removed Elements are always removed from index 0
+
+For Example:
+
+1. Start with stack -> `[]`
+2. Add element 1 -> `[1]`
+3. Add element 2 -> `[2, 1]`
+4. Add element 3 -> `[3, 2, 1]`
+5. Remove element -> `[2, 1]`
+6. Remove element -> `[1]`
+7. Remove element -> `[]`
+
+Additionally these are the supported endpoints, all endpoints return the current state of stack.
+
+Please note the server will start at `http://localhost:3000`:
+
+- Get Full Stack -> `GET /filo`
+- Add Number to Stack -> `POST /filo?number=` (Must be a number)
+- Remove Number From Stack -> `DELETE /filo`
+- Remove all element -> `DELETE /filo/all`
+
 ## Installation
 
 ```bash
@@ -39,7 +63,7 @@ $ yarn install
 $ yarn run start
 
 # watch mode
-$ yarn run start:dev
+$ yarn run start:dev 
 
 # production mode
 $ yarn run start:prod
