@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "d03c27a4-ba56-446c-83cc-36c6c867f9b8",
+		"name": "FILO Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8078922"
+	},
+	"item": [
+		{
+			"name": "Get FILO Stack",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/filo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"filo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Number to FILO Stack",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "number",
+							"value": "15",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/filo?number=42",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"filo"
+					],
+					"query": [
+						{
+							"key": "number",
+							"value": "42"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove From FILO Stack",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/filo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"filo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Whole FILO Stack",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/filo/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"filo",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

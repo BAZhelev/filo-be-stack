@@ -50,6 +50,8 @@ Please note the server will start at `http://localhost:3000`:
 - Remove Number From Stack -> `DELETE /filo`
 - Remove all element -> `DELETE /filo/all`
 
+A Postman collection with all endpoints can be found at the root of the project under `PostmanCollection.json`
+
 ## Installation
 
 ```bash
