@@ -4,6 +4,6 @@ import { FiloService } from './filo.service';
 
 @Module({
   controllers: [FiloController],
-  providers: [FiloService]
+  providers: [FiloService],
 })
 export class FiloModule {}
